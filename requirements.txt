@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+dash
+feffery-maplibre
+feffery-antd-components
+feffery-utils-components
