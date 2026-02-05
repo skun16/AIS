@@ -1,4 +1,4 @@
-from dash import Dash, dcc, html
+from dash import Dash, dcc
 import feffery_maplibre as fml
 import feffery_antd_components as fac
 import feffery_utils_components as fuc
@@ -80,10 +80,10 @@ def create_dash_app() -> Dash:
                                             "结合企业知识库与外部数据，提供可追溯、可解释的智能问答。"
                                         ),
                                         fac.AntdTimeline(
-                                            [
-                                                fac.AntdTimelineItem("接入文档与地图数据"),
-                                                fac.AntdTimelineItem("向量化索引与权限过滤"),
-                                                fac.AntdTimelineItem("多智能体协同推理"),
+                                            items=[
+                                                {"content": "接入文档与地图数据"},
+                                                {"content": "向量化索引与权限过滤"},
+                                                {"content": "多智能体协同推理"},
                                             ]
                                         ),
                                         fac.AntdInput(
